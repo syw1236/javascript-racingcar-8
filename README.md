@@ -49,4 +49,34 @@
 ➤ 시도 횟수 입력 검증 테스트  
 ➤ 전진 조건(랜덤값 4 이상 시 이동) 테스트  
 ➤ 우승자 판별 로직 테스트  
-➤ 전체 게임 흐름 테스트 
+
+## 📁 파일 구조
+```
+javascript-racingcar-8/
+├── 📁 src/                          # 실제 애플리케이션 코드
+│   ├── 📄 App.js                    # 프로그램 진입점 (run 함수 포함)
+│   ├── 📄 index.js
+│   ├── 📁 core/                     # 핵심 게임 로직
+│   │   └── 📄 RacingGame.js         # 경주 실행, 이동, 우승자 판단 로직
+│   │
+│   ├── 📁 domain/                   # 도메인 객체 (비즈니스 로직 단위)
+│   │   └── 📄 Car.js                # 자동차 상태(이름, 위치 등) 관리
+│   │
+│   ├── 📁 utils/                    # 유틸리티 로직
+│   │   ├── 📄 inputValidator.js     # 입력값 검증 로직
+│   │   └── 📄 RandomUtil.js         # Random API 래핑 (getRandomNumber)
+│   │
+│   ├── 📁 View/                     # 입출력 뷰 관리
+│   │   └── 📄 OutputView.js         # 게임 결과 출력 담당
+│   │
+│   └── 📄 constants.js              # 상수 모음 (메시지, 에러문, 안내문 등)
+│
+├── 📁 __tests__/                    # 테스트 파일
+│   ├── 📄 ApplicationTest.js        # 기능 통합 테스트 (미션 기본 제공)
+│   ├── 📄 App.test.js               # App 전체 흐름 테스트
+│   ├── 📄 inputValidator.test.js    # 입력 검증 단위 테스트
+│   ├── 📄 RacingGame.test.js        # 게임 로직 단위 테스트
+```
+
+## 🧪 테스트 결과
+![image](https://i.ibb.co/yFf0z3ZZ/image.png)➤ 전체 게임 흐름 테스트 
