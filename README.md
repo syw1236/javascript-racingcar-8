@@ -73,9 +73,9 @@ javascript-racingcar-8/
 │
 ├── 📁 __tests__/                    # 테스트 파일
 │   ├── 📄 ApplicationTest.js        # 기능 통합 테스트 (미션 기본 제공)
-│   ├── 📄 App.test.js               # App 전체 흐름 테스트
-│   ├── 📄 inputValidator.test.js    # 입력 검증 단위 테스트
-│   ├── 📄 RacingGame.test.js        # 게임 로직 단위 테스트
+│   ├── 📄 AppTest.js               # App 전체 흐름 테스트
+│   ├── 📄 InputValidatorTest.js    # 입력 검증 단위 테스트
+│   ├── 📄 RacingGameTest.js        # 게임 로직 단위 테스트
 ```
 
 ## 🧪 테스트 결과
